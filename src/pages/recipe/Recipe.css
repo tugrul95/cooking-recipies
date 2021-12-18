@@ -1,0 +1,81 @@
+.recipe {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  background: #fff;
+  padding: 40px;
+  position: relative;
+}
+
+.recipe ul {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+.recipe li {
+  list-style: none;
+  margin-right: 10px;
+  color: #777;
+}
+
+.recipe li::after {
+  content: ",";
+}
+
+.method {
+  text-align: left;
+  line-height: 1.5em;
+}
+.recipe h4 {
+  margin: 15px 0 5px;
+}
+.recipe .go-back {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #eee;
+  color: #222;
+  padding: 3px 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.recipe .go-back:hover {
+  background: #444;
+  color: #fff;
+}
+.recipe .delete {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  color: #222;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.recipe.dark-mode .delete {
+  color: rgb(204, 204, 204);
+  filter: none;
+}
+.recipe .delete:hover {
+  color: #f34343;
+  filter: none;
+}
+
+.recipe.dark-mode {
+  background: #555;
+}
+
+.recipe.dark-mode h1,
+.recipe.dark-mode h2,
+.recipe.dark-mode h4,
+.recipe.dark-mode .page-title {
+  color: #fff;
+}
+.recipe.dark-mode li,
+.recipe.dark-mode p {
+  color: rgb(235, 235, 235);
+}
